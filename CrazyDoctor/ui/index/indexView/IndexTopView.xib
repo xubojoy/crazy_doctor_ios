@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tb9-uX-7OD" customClass="IndexTopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_homepage_boat" translatesAutoresizingMaskIntoConstraints="NO" id="cZL-l6-ydv">
+                    <rect key="frame" x="282" y="0.0" width="38" height="27.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="chM-xo-LU3"/>
+                        <constraint firstAttribute="height" constant="27.5" id="lnW-ux-rhN"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_homepage_ship" translatesAutoresizingMaskIntoConstraints="NO" id="TTI-a4-iuF">
+                    <rect key="frame" x="0.0" y="6" width="57.5" height="61.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61.5" id="DV5-v4-Qo5"/>
+                        <constraint firstAttribute="width" constant="57.5" id="f5Z-fM-hza"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_abandon_next_nor" highlightedImage="btn_abandon_next_pre" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-BE-rXd">
+                    <rect key="frame" x="215" y="22" width="83" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="HUG-sW-lPm"/>
+                        <constraint firstAttribute="height" constant="26" id="b9V-Up-bAE"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_abandon_next" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-Sw-vpH">
+                    <rect key="frame" x="287" y="31.5" width="4" height="7"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="Kyo-nf-n4F"/>
+                        <constraint firstAttribute="height" constant="7" id="Srr-Gj-t6T"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="舌诊预备" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaH-h6-ZHj">
+                    <rect key="frame" x="240" y="24" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="h0A-NC-Ax6"/>
+                        <constraint firstAttribute="height" constant="21" id="stE-SK-Swa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_homepage_abandon" translatesAutoresizingMaskIntoConstraints="NO" id="Tyh-hx-fNH">
+                    <rect key="frame" x="220" y="29" width="18" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="BII-NS-NyN"/>
+                        <constraint firstAttribute="width" constant="18" id="ajp-jH-yGo"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPK-Ws-zmp">
+                    <rect key="frame" x="215" y="22" width="83" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="2eH-7d-Roq"/>
+                        <constraint firstAttribute="width" constant="83" id="v5a-ut-mpk"/>
+                    </constraints>
+                    <connections>
+                        <action selector="tongueDiagnosisReadyBtnClick:" destination="tb9-uX-7OD" eventType="touchUpInside" id="ixl-EX-TBf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TTI-a4-iuF" firstAttribute="leading" secondItem="tb9-uX-7OD" secondAttribute="leading" id="3p3-bH-bJc"/>
+                <constraint firstAttribute="trailing" secondItem="IPK-Ws-zmp" secondAttribute="trailing" constant="22" id="5U3-xM-fEK"/>
+                <constraint firstItem="cZL-l6-ydv" firstAttribute="top" secondItem="tb9-uX-7OD" secondAttribute="top" id="9RS-9b-wil"/>
+                <constraint firstAttribute="trailing" secondItem="qhb-BE-rXd" secondAttribute="trailing" constant="22" id="Cl2-A7-J4G"/>
+                <constraint firstItem="Tyh-hx-fNH" firstAttribute="top" secondItem="tb9-uX-7OD" secondAttribute="top" constant="29" id="HKJ-Hd-GAs"/>
+                <constraint firstItem="WaH-h6-ZHj" firstAttribute="leading" secondItem="Tyh-hx-fNH" secondAttribute="trailing" constant="2" id="JFi-pP-7lB"/>
+                <constraint firstAttribute="trailing" secondItem="cZL-l6-ydv" secondAttribute="trailing" id="NSg-s3-zLa"/>
+                <constraint firstAttribute="trailing" secondItem="F9K-Sw-vpH" secondAttribute="trailing" constant="29" id="Xfy-gi-mkt"/>
+                <constraint firstItem="F9K-Sw-vpH" firstAttribute="top" secondItem="cZL-l6-ydv" secondAttribute="bottom" constant="4" id="YEy-Fu-DDU"/>
+                <constraint firstItem="qhb-BE-rXd" firstAttribute="top" secondItem="tb9-uX-7OD" secondAttribute="top" constant="22" id="i1t-kQ-R7N"/>
+                <constraint firstItem="IPK-Ws-zmp" firstAttribute="top" secondItem="tb9-uX-7OD" secondAttribute="top" constant="22" id="lWt-Lt-qo4"/>
+                <constraint firstItem="TTI-a4-iuF" firstAttribute="top" secondItem="tb9-uX-7OD" secondAttribute="top" constant="6" id="mUz-kG-fmc"/>
+                <constraint firstItem="F9K-Sw-vpH" firstAttribute="leading" secondItem="WaH-h6-ZHj" secondAttribute="trailing" constant="5" id="rvr-Yk-Nk2"/>
+                <constraint firstItem="WaH-h6-ZHj" firstAttribute="top" secondItem="tb9-uX-7OD" secondAttribute="top" constant="24" id="sru-6f-Zp8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgBtnImgView" destination="qhb-BE-rXd" id="cfx-GJ-om8"/>
+                <outlet property="tongueDiagnosisReadyBtn" destination="IPK-Ws-zmp" id="rsS-N5-8iZ"/>
+            </connections>
+            <point key="canvasLocation" x="271" y="180.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_homepage_boat" width="38" height="27"/>
+        <image name="bg_homepage_ship" width="57" height="61"/>
+        <image name="btn_abandon_next" width="4" height="7"/>
+        <image name="btn_abandon_next_nor" width="83" height="26"/>
+        <image name="btn_abandon_next_pre" width="83" height="26"/>
+        <image name="icon_homepage_abandon" width="18" height="12"/>
+    </resources>
+</document>

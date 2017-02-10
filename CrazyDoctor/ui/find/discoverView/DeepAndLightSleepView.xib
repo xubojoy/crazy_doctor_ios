@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fEL-Sw-Mxu" customClass="DeepAndLightSleepView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUD-kJ-R1Z">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="uFK-tg-eqa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvt-O3-Edk">
+                    <rect key="frame" x="160" y="0.0" width="160" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="a2M-27-bjj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sUD-kJ-R1Z" firstAttribute="leading" secondItem="fEL-Sw-Mxu" secondAttribute="leading" id="MEw-CA-3nt"/>
+                <constraint firstItem="Tvt-O3-Edk" firstAttribute="leading" secondItem="sUD-kJ-R1Z" secondAttribute="trailing" id="OuB-Kd-Crk"/>
+                <constraint firstItem="Tvt-O3-Edk" firstAttribute="top" secondItem="fEL-Sw-Mxu" secondAttribute="top" id="UeE-uh-vIm"/>
+                <constraint firstItem="sUD-kJ-R1Z" firstAttribute="top" secondItem="fEL-Sw-Mxu" secondAttribute="top" id="UnD-op-hqu"/>
+                <constraint firstItem="Tvt-O3-Edk" firstAttribute="width" secondItem="sUD-kJ-R1Z" secondAttribute="width" id="cYS-6Y-xEy"/>
+                <constraint firstAttribute="trailing" secondItem="Tvt-O3-Edk" secondAttribute="trailing" id="jow-VY-goT"/>
+                <constraint firstItem="Tvt-O3-Edk" firstAttribute="leading" secondItem="sUD-kJ-R1Z" secondAttribute="trailing" id="oti-ph-iZ5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deepSleepLabel" destination="Tvt-O3-Edk" id="nFm-wa-GqG"/>
+                <outlet property="lightSleepLabel" destination="sUD-kJ-R1Z" id="ZA0-b3-wbV"/>
+            </connections>
+            <point key="canvasLocation" x="545" y="225.5"/>
+        </view>
+    </objects>
+</document>

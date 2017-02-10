@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SubhealthyProblemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sM0-Hk-96q">
+                        <rect key="frame" x="15" y="0.0" width="0.5" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="xaG-DO-CPY"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_sub_health" translatesAutoresizingMaskIntoConstraints="NO" id="zJ6-CS-jnO">
+                        <rect key="frame" x="29" y="10" width="8" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="15z-kh-li9"/>
+                            <constraint firstAttribute="width" constant="8" id="I5A-LH-b4d"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eh8-4A-wCU">
+                        <rect key="frame" x="305" y="0.0" width="0.5" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="LUc-E9-KU9"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeT-fl-qyM">
+                        <rect key="frame" x="49" y="0.0" width="250" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypV-EZ-T5J">
+                        <rect key="frame" x="15" y="0.0" width="290" height="0.5"/>
+                        <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Nse-jG-dMB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqh-Ua-5Jg">
+                        <rect key="frame" x="15" y="29" width="290" height="0.5"/>
+                        <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="WI6-6z-WeA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="AeT-fl-qyM" secondAttribute="bottom" constant="-8.5" id="06A-Wl-bse"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eh8-4A-wCU" secondAttribute="bottom" constant="-8.5" id="5Lc-dS-wGj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oqh-Ua-5Jg" secondAttribute="trailing" constant="7" id="7tk-cs-oMa"/>
+                    <constraint firstItem="sM0-Hk-96q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="9cZ-at-tGb"/>
+                    <constraint firstItem="oqh-Ua-5Jg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="AJw-wa-IVe"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="oqh-Ua-5Jg" secondAttribute="bottom" constant="-8" id="GHd-Iz-ysB"/>
+                    <constraint firstItem="ypV-EZ-T5J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="HzA-M8-hwC"/>
+                    <constraint firstItem="AeT-fl-qyM" firstAttribute="leading" secondItem="zJ6-CS-jnO" secondAttribute="trailing" constant="12" id="NuP-sL-cBC"/>
+                    <constraint firstItem="AeT-fl-qyM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="SmE-Yp-FUR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eh8-4A-wCU" secondAttribute="trailing" constant="6.5" id="ZQz-g6-qZi"/>
+                    <constraint firstItem="zJ6-CS-jnO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aDb-T3-MPB"/>
+                    <constraint firstItem="eh8-4A-wCU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="cZb-oc-eYG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AeT-fl-qyM" secondAttribute="trailing" constant="13" id="dHt-ca-occ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ypV-EZ-T5J" secondAttribute="trailing" constant="7" id="elI-UK-QvZ"/>
+                    <constraint firstItem="sM0-Hk-96q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="gXq-4B-UKC"/>
+                    <constraint firstItem="zJ6-CS-jnO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="21" id="hrp-MC-kpT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sM0-Hk-96q" secondAttribute="bottom" constant="-8.5" id="o7R-MJ-JLa"/>
+                    <constraint firstItem="ypV-EZ-T5J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="vmH-7p-rtj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downLine" destination="oqh-Ua-5Jg" id="KcH-EY-BRm"/>
+                <outlet property="leftLineView" destination="sM0-Hk-96q" id="4RQ-7m-1A8"/>
+                <outlet property="markImageView" destination="zJ6-CS-jnO" id="OqV-vu-VL5"/>
+                <outlet property="rightLine" destination="eh8-4A-wCU" id="Ib3-yQ-N6C"/>
+                <outlet property="titlelabel" destination="AeT-fl-qyM" id="OrT-GQ-sGb"/>
+                <outlet property="upLine" destination="ypV-EZ-T5J" id="YDs-fK-Nx0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_sub_health" width="8" height="10"/>
+    </resources>
+</document>

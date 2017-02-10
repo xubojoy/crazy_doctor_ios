@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mHL-H7-kri" customClass="TopReCheckView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuN-bg-o50">
+                    <rect key="frame" x="145" y="10" width="160" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="CKE-io-i2O"/>
+                        <constraint firstAttribute="height" constant="35" id="Sm5-ZV-Inb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="-17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="重新检查" image="icon_recheck_double_check">
+                        <color key="titleColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="reCheckBtnClick:" destination="mHL-H7-kri" eventType="touchUpInside" id="JFR-Xt-98j"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  距上次检查已经n天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCj-Tq-DHl">
+                    <rect key="frame" x="15" y="10" width="130" height="35"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DuN-bg-o50" firstAttribute="centerY" secondItem="mHL-H7-kri" secondAttribute="centerY" id="5Og-e4-LQ1"/>
+                <constraint firstAttribute="bottom" secondItem="cCj-Tq-DHl" secondAttribute="bottom" constant="10" id="D21-Ju-ZvF"/>
+                <constraint firstAttribute="trailing" secondItem="DuN-bg-o50" secondAttribute="trailing" constant="15" id="Zol-Ad-3qh"/>
+                <constraint firstItem="DuN-bg-o50" firstAttribute="leading" secondItem="cCj-Tq-DHl" secondAttribute="trailing" id="ax1-ga-DN4"/>
+                <constraint firstItem="cCj-Tq-DHl" firstAttribute="leading" secondItem="mHL-H7-kri" secondAttribute="leading" constant="15" id="nND-n6-B9c"/>
+                <constraint firstItem="cCj-Tq-DHl" firstAttribute="top" secondItem="mHL-H7-kri" secondAttribute="top" constant="10" id="ujc-Jn-Lt7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayCountLbel" destination="cCj-Tq-DHl" id="iYS-0x-cLF"/>
+                <outlet property="reCkeckBtn" destination="DuN-bg-o50" id="Iuy-zM-LFM"/>
+            </connections>
+            <point key="canvasLocation" x="404" y="272.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_recheck_double_check" width="15" height="15"/>
+    </resources>
+</document>

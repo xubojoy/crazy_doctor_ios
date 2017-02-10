@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iRd-R9-YIX" customClass="CustomEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_no" translatesAutoresizingMaskIntoConstraints="NO" id="Xbp-j8-inY">
+                    <rect key="frame" x="74" y="0.0" width="172" height="163"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="163" id="LTn-dW-hfL"/>
+                        <constraint firstAttribute="width" constant="172" id="d3i-Vw-Xu7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl7-Ig-cnm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <connections>
+                        <action selector="customEmptyBtnClick:" destination="iRd-R9-YIX" eventType="touchUpInside" id="aA9-Ng-TTl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tl7-Ig-cnm" firstAttribute="leading" secondItem="iRd-R9-YIX" secondAttribute="leading" id="FYK-xE-66B"/>
+                <constraint firstAttribute="bottom" secondItem="tl7-Ig-cnm" secondAttribute="bottom" id="iex-0u-Tzq"/>
+                <constraint firstItem="Xbp-j8-inY" firstAttribute="centerX" secondItem="iRd-R9-YIX" secondAttribute="centerX" id="pwU-JZ-94k"/>
+                <constraint firstAttribute="trailing" secondItem="tl7-Ig-cnm" secondAttribute="trailing" id="vQj-J3-B2s"/>
+                <constraint firstItem="tl7-Ig-cnm" firstAttribute="top" secondItem="iRd-R9-YIX" secondAttribute="top" id="yCM-D9-wHQ"/>
+                <constraint firstItem="Xbp-j8-inY" firstAttribute="top" secondItem="iRd-R9-YIX" secondAttribute="top" id="zFl-qh-M4S"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="customBtn" destination="tl7-Ig-cnm" id="ZXD-FP-Ala"/>
+                <outlet property="emptyImgView" destination="Xbp-j8-inY" id="k6J-T9-qU2"/>
+            </connections>
+            <point key="canvasLocation" x="420" y="319"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_no" width="171" height="163"/>
+    </resources>
+</document>

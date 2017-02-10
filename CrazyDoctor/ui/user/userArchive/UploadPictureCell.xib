@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UploadPictureCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="就诊病历" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPY-kR-Onm">
+                        <rect key="frame" x="235" y="20" width="70" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="439-ZS-sh8"/>
+                            <constraint firstAttribute="width" constant="70" id="bPg-7M-Ldn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最多上传3张图片" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHr-I1-Ftn">
+                        <rect key="frame" x="235" y="50" width="70" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Cfa-oH-S51"/>
+                            <constraint firstAttribute="height" constant="10" id="na5-mk-yKE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XfZ-ea-zAA">
+                        <rect key="frame" x="15" y="10" width="220" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="220" id="gYL-Jt-fH6"/>
+                            <constraint firstAttribute="height" constant="60" id="yH3-Bm-nyM"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="3lJ-IF-iT6">
+                            <size key="itemSize" width="70" height="60"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ran-nO-Tbv">
+                        <rect key="frame" x="15" y="79" width="305" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="dU3-1C-nfX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XfZ-ea-zAA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B19-Jf-jKz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fHr-I1-Ftn" secondAttribute="bottom" constant="11.5" id="Dbw-dZ-a1m"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dPY-kR-Onm" secondAttribute="trailing" constant="7" id="JY7-EZ-po1"/>
+                    <constraint firstItem="ran-nO-Tbv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Sfq-Vg-FG6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ran-nO-Tbv" secondAttribute="bottom" constant="-8" id="ekd-U7-j1u"/>
+                    <constraint firstItem="XfZ-ea-zAA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="n2C-kV-BFV"/>
+                    <constraint firstItem="dPY-kR-Onm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="pyK-r8-S2t"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fHr-I1-Ftn" secondAttribute="trailing" constant="7" id="uIf-my-Qis"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ran-nO-Tbv" secondAttribute="trailing" constant="-8" id="x1V-Yb-inP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="XfZ-ea-zAA" id="26y-9R-lJK"/>
+                <outlet property="downLine" destination="ran-nO-Tbv" id="Tuy-ou-51E"/>
+                <outlet property="remindLabel" destination="fHr-I1-Ftn" id="WYC-Qr-kUN"/>
+                <outlet property="titleLabel" destination="dPY-kR-Onm" id="sgY-uR-1rC"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

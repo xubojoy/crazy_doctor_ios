@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhysiqueCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="35"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="46" height="35"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_homepage_red" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-mU-G1f">
+                        <rect key="frame" x="0.0" y="0.0" width="46" height="35"/>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RE-HT-oTI">
+                        <rect key="frame" x="0.0" y="0.0" width="46" height="35"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="痰湿">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="a2j-mU-G1f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1uq-gC-emu"/>
+                <constraint firstItem="9RE-HT-oTI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kmy-zZ-M4V"/>
+                <constraint firstItem="a2j-mU-G1f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ptf-Ht-sZi"/>
+                <constraint firstAttribute="bottom" secondItem="9RE-HT-oTI" secondAttribute="bottom" id="Uia-8L-n47"/>
+                <constraint firstAttribute="trailing" secondItem="a2j-mU-G1f" secondAttribute="trailing" id="fHX-C0-M3N"/>
+                <constraint firstAttribute="trailing" secondItem="9RE-HT-oTI" secondAttribute="trailing" id="ivF-af-kZw"/>
+                <constraint firstItem="9RE-HT-oTI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="klg-Zp-lFl"/>
+                <constraint firstAttribute="bottom" secondItem="a2j-mU-G1f" secondAttribute="bottom" id="oDz-P8-cSu"/>
+            </constraints>
+            <connections>
+                <outlet property="classifyLogoImgView" destination="a2j-mU-G1f" id="w64-Wz-U2e"/>
+                <outlet property="classifyLogoTitleBtn" destination="9RE-HT-oTI" id="zwL-Oc-orB"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="231"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_homepage_red" width="46" height="35"/>
+    </resources>
+</document>

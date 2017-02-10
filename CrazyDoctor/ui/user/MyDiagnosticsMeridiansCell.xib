@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyDiagnosticsMeridiansCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_abandon_record_file" translatesAutoresizingMaskIntoConstraints="NO" id="O8s-JD-2dl">
+                        <rect key="frame" x="15" y="51" width="290" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="UVi-5O-YhE"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_record_file_time" translatesAutoresizingMaskIntoConstraints="NO" id="KQR-pq-bHN">
+                        <rect key="frame" x="15" y="17" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="CwJ-nW-fCc"/>
+                            <constraint firstAttribute="height" constant="16" id="JT2-Fk-RpR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-5-12 10:52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTx-5J-6Y7">
+                        <rect key="frame" x="45" y="15" width="260" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Goa-PS-y1t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJS-wv-coC">
+                        <rect key="frame" x="0.0" y="150" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="n20-74-yb1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经络档案" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kca-2i-WiQ">
+                        <rect key="frame" x="69" y="81" width="56" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ten-MI-Dug"/>
+                            <constraint firstAttribute="width" constant="56" id="hhi-TJ-gVK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blq-gt-GTf">
+                        <rect key="frame" x="150" y="71" width="90" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="K49-6M-1U1"/>
+                            <constraint firstAttribute="height" constant="40" id="XZk-Ct-ucl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="O8s-JD-2dl" secondAttribute="trailing" constant="7" id="13E-Hi-seC"/>
+                    <constraint firstItem="CTx-5J-6Y7" firstAttribute="leading" secondItem="KQR-pq-bHN" secondAttribute="trailing" constant="14" id="19d-eO-hsz"/>
+                    <constraint firstItem="Kca-2i-WiQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="73" id="1Pa-ix-0g5"/>
+                    <constraint firstItem="CTx-5J-6Y7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="5je-BA-58K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="EJS-wv-coC" secondAttribute="trailing" constant="-8" id="6t1-rd-BSj"/>
+                    <constraint firstItem="O8s-JD-2dl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="88t-Ka-pJc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EJS-wv-coC" secondAttribute="bottom" constant="-8" id="8JH-zu-2k9"/>
+                    <constraint firstItem="EJS-wv-coC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Ads-kF-Snt"/>
+                    <constraint firstItem="KQR-pq-bHN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Awe-xr-M82"/>
+                    <constraint firstItem="blq-gt-GTf" firstAttribute="leading" secondItem="Kca-2i-WiQ" secondAttribute="trailing" constant="25" id="BUc-os-Ijd"/>
+                    <constraint firstItem="KQR-pq-bHN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="GNs-Mw-xTt"/>
+                    <constraint firstItem="blq-gt-GTf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="63" id="Xl2-iU-0rd"/>
+                    <constraint firstItem="Kca-2i-WiQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="61" id="ebq-7O-s7e"/>
+                    <constraint firstItem="O8s-JD-2dl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="43" id="qNB-SJ-83a"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CTx-5J-6Y7" secondAttribute="trailing" constant="7" id="vmn-Bq-htg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgMeridiansView" destination="blq-gt-GTf" id="jtH-nf-YEj"/>
+                <outlet property="dateLabel" destination="CTx-5J-6Y7" id="upG-s1-Lgx"/>
+                <outlet property="downLine" destination="EJS-wv-coC" id="IAR-iG-ffR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_abandon_record_file" width="345" height="80"/>
+        <image name="icon_record_file_time" width="16" height="16"/>
+    </resources>
+</document>

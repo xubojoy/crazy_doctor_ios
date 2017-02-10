@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RechargeCommonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值账户" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGX-qu-hbX">
+                        <rect key="frame" x="15" y="-1" width="80" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="YvK-ZT-Z8O"/>
+                            <constraint firstAttribute="height" constant="50" id="ncQ-qF-KJw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3h-67-QWz">
+                        <rect key="frame" x="0.0" y="49" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Adc-Vg-esc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jGX-qu-hbX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="Cmz-Dq-ygp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="v3h-67-QWz" secondAttribute="bottom" constant="-8" id="Lf7-to-nAU"/>
+                    <constraint firstItem="jGX-qu-hbX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hZ2-kb-LIJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="v3h-67-QWz" secondAttribute="trailing" constant="-8" id="sfD-SO-3Cj"/>
+                    <constraint firstItem="v3h-67-QWz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="vRt-e5-3MV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="downLine" destination="v3h-67-QWz" id="JEs-de-I13"/>
+                <outlet property="titleLabel" destination="jGX-qu-hbX" id="ocs-Mk-H2f"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,90 @@
+//
+//  CrazyDoctor-Prefix.pch
+//  CrazyDoctor
+//
+//  Created by xubojoy on 16/3/31.
+//  Copyright © 2016年 xubojoy. All rights reserved.
+//
+
+#ifndef CrazyDoctor_Prefix_pch
+#define CrazyDoctor_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* CrazyDoctor_Prefix_pch */
+#import <Availability.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIImageView+WebCache.h"
+#import <ShareSDK/ShareSDK.h>
+
+#define MR_SHORTHAND
+#import "AppStatus.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "ASIDownloadCache.h"
+#import "JSONModel.h"
+#import "JSONKit.h"
+#import "HttpRequestFacade.h"
+#import "OpenUDID.h"
+#import "Reachability.h"
+#import "Constant.h"
+#import "NSStringUtils.h"
+#import "ExceptionMsg.h"
+#import "SVProgressHUD.h"
+#import "ColorUtils.h"
+#import "FunctionUtils.h"
+#import "UMMobClick/MobClick.h"
+#import "ImageUtils.h"
+#import "UIViewController+Custom.h"
+#import "DateUtils.h"
+#import "DeviceUtils.h"
+#import "ImageUtils.h"
+#import "Toast+UIView.h"
+#import "UIView+Custom.h"
+#import "BaseViewController.h"
+#import "HeaderView.h"
+#import "LoadingStatusView.h"
+#import "UILabel+Custom.h"
+#import "UILabel+Block.h"
+#import "ShareSDKProcessor.h"
+#import "IQKeyboardManager.h"
+#import "MJRefresh.h"
+#import "FunctionUtils.h"
+#import "BPush.h"
+#import "AppDelegate.h"
+
+
+#endif
+
+#ifdef LLDEBUG
+#define LLLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define LLLog(format, ...)
+#endif
+
+#define LL_IS_IOS_6_OR_EARLIER [[UIDevice currentDevice] systemVersion].floatValue < 7.0
+
+#ifdef DEBUG_MODE
+#define DLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DLog( s, ... )
+#endif
+
+#define debugMethod() NSLog(@"%s", __func__)
+
+#define DEFINE_SINGLETON_FOR_CLASS(className) \
+\
++ (className *)shared##className { \
+static className *shared##className = nil; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+shared##className = [[self alloc] init]; \
+}); \
+return shared##className; \
+}

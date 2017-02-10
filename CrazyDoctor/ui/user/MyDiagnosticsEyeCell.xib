@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="MyDiagnosticsEyeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="225.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_abandon_record_file_big" translatesAutoresizingMaskIntoConstraints="NO" id="mZi-ms-Alx">
+                        <rect key="frame" x="15" y="51" width="290" height="155"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="155" id="XAt-5T-adD"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_record_file_time" translatesAutoresizingMaskIntoConstraints="NO" id="FrL-Wp-67H">
+                        <rect key="frame" x="15" y="17" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="bDX-6W-thL"/>
+                            <constraint firstAttribute="height" constant="16" id="ml8-fO-G1S"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-5-11 20:38" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-OU-G3j">
+                        <rect key="frame" x="45" y="15" width="260" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="r19-4d-rbs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="眼诊档案" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-uS-kiC">
+                        <rect key="frame" x="69" y="118" width="56" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Ojm-Sm-5IV"/>
+                            <constraint firstAttribute="width" constant="56" id="elg-dA-mCS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SR1-O2-Hub">
+                        <rect key="frame" x="0.0" y="225" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="NO2-ub-RGW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jEv-uS-kiC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="61" id="8On-gB-ac0"/>
+                    <constraint firstItem="jEv-uS-kiC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="110" id="En0-qC-owB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zhP-OU-G3j" secondAttribute="trailing" constant="7" id="G0Z-V1-sb0"/>
+                    <constraint firstItem="zhP-OU-G3j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="GMi-fb-EIz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mZi-ms-Alx" secondAttribute="trailing" constant="7" id="Hj6-zN-cHX"/>
+                    <constraint firstItem="SR1-O2-Hub" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Oao-oh-F6f"/>
+                    <constraint firstItem="zhP-OU-G3j" firstAttribute="leading" secondItem="FrL-Wp-67H" secondAttribute="trailing" constant="14" id="RFn-fx-r5K"/>
+                    <constraint firstItem="FrL-Wp-67H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="SFf-k4-akY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SR1-O2-Hub" secondAttribute="trailing" constant="-8" id="Uqm-ND-if6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="SR1-O2-Hub" secondAttribute="bottom" constant="-8" id="eLo-Ag-Cj3"/>
+                    <constraint firstItem="FrL-Wp-67H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="hnM-l5-8HR"/>
+                    <constraint firstItem="mZi-ms-Alx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="43" id="xcT-ok-aRN"/>
+                    <constraint firstItem="mZi-ms-Alx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="zGZ-lg-bRc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="zhP-OU-G3j" id="OA9-e3-u97"/>
+                <outlet property="downLine" destination="SR1-O2-Hub" id="tgt-s6-QLs"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="225.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_abandon_record_file_big" width="345" height="154"/>
+        <image name="icon_record_file_time" width="16" height="16"/>
+    </resources>
+</document>

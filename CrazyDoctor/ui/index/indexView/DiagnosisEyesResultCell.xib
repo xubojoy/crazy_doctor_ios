@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DiagnosisEyesResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_eye_assist_liver_red" translatesAutoresizingMaskIntoConstraints="NO" id="6zo-yA-lys">
+                        <rect key="frame" x="211" y="10" width="94" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="SKf-wH-5eR"/>
+                            <constraint firstAttribute="height" constant="130" id="nwJ-qP-NDr"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_eye_assist_liver_r" translatesAutoresizingMaskIntoConstraints="NO" id="Gul-Dz-vIj">
+                        <rect key="frame" x="15" y="10" width="196" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="iuj-K5-bfu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="肝" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPu-rO-yFq">
+                        <rect key="frame" x="211" y="10" width="94" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="83J-EA-2ET"/>
+                            <constraint firstAttribute="width" constant="94" id="gZY-g1-Ksi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fiy-hc-4p8">
+                        <rect key="frame" x="63" y="24" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="CaC-fB-5Mi"/>
+                            <constraint firstAttribute="width" constant="100" id="sAS-56-ACc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gul-Dz-vIj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="6SS-Dk-J1h"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6zo-yA-lys" secondAttribute="trailing" constant="7" id="AzA-nU-Evm"/>
+                    <constraint firstItem="fiy-hc-4p8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Feq-R3-Gf4"/>
+                    <constraint firstItem="yPu-rO-yFq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="O7h-LE-BiM"/>
+                    <constraint firstItem="6zo-yA-lys" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Oxx-nF-glV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yPu-rO-yFq" secondAttribute="trailing" constant="7" id="cft-El-tUy"/>
+                    <constraint firstItem="Gul-Dz-vIj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hNg-D1-8wN"/>
+                    <constraint firstItem="6zo-yA-lys" firstAttribute="leading" secondItem="Gul-Dz-vIj" secondAttribute="trailing" id="heG-MV-aba"/>
+                    <constraint firstItem="fiy-hc-4p8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="55" id="znh-cK-Hw6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftImgView" destination="Gul-Dz-vIj" id="08j-zR-fcP"/>
+                <outlet property="logoImgView" destination="fiy-hc-4p8" id="KJy-tq-iwB"/>
+                <outlet property="rightImgView" destination="6zo-yA-lys" id="jyv-MU-WWu"/>
+                <outlet property="titleLabel" destination="yPu-rO-yFq" id="I08-Bl-Xuw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_eye_assist_liver_r" width="30" height="30"/>
+        <image name="bg_eye_assist_liver_red" width="94" height="130"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TonguePictureCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="programmer.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WOD-Uh-KGX">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特禀类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-LZ-btL">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="80"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwN-bv-3oU">
+                        <rect key="frame" x="59" y="2" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="BTC-wb-Dkp"/>
+                            <constraint firstAttribute="height" constant="30" id="kMd-ut-Trw"/>
+                        </constraints>
+                        <connections>
+                            <action selector="imgSelectClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="7ui-wD-fxM"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA8-Uy-5IP">
+                        <rect key="frame" x="0.0" y="25" width="51" height="55"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="showBigIMGClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QdY-Te-hfT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="mwN-bv-3oU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="49d-CU-lZR"/>
+                <constraint firstAttribute="trailing" secondItem="SGm-LZ-btL" secondAttribute="trailing" id="8xp-Ui-t0y"/>
+                <constraint firstAttribute="trailing" secondItem="mwN-bv-3oU" secondAttribute="trailing" constant="1" id="Ax2-FU-Vk9"/>
+                <constraint firstAttribute="trailing" secondItem="WOD-Uh-KGX" secondAttribute="trailing" id="ECo-Fr-4sZ"/>
+                <constraint firstItem="mwN-bv-3oU" firstAttribute="leading" secondItem="nA8-Uy-5IP" secondAttribute="trailing" constant="8" id="FVm-Wy-h64"/>
+                <constraint firstAttribute="bottom" secondItem="WOD-Uh-KGX" secondAttribute="bottom" id="Wgx-pQ-BRX"/>
+                <constraint firstItem="WOD-Uh-KGX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="atm-PY-UG3"/>
+                <constraint firstItem="WOD-Uh-KGX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fUD-BI-GIq"/>
+                <constraint firstAttribute="bottom" secondItem="nA8-Uy-5IP" secondAttribute="bottom" id="i97-x3-4k8"/>
+                <constraint firstItem="nA8-Uy-5IP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="lZV-8q-w9U"/>
+                <constraint firstItem="nA8-Uy-5IP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ndh-Rl-B2y"/>
+                <constraint firstItem="SGm-LZ-btL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rhj-eW-JwB"/>
+                <constraint firstAttribute="bottom" secondItem="SGm-LZ-btL" secondAttribute="bottom" id="vQG-jk-E93"/>
+                <constraint firstItem="SGm-LZ-btL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yGR-9Q-UDL"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImgView" destination="WOD-Uh-KGX" id="IUe-0S-yRo"/>
+                <outlet property="selectedBtn" destination="mwN-bv-3oU" id="PQN-ek-uQ7"/>
+                <outlet property="showIMGBtn" destination="nA8-Uy-5IP" id="5JJ-cZ-vxo"/>
+                <outlet property="titleLabel" destination="SGm-LZ-btL" id="Tps-Mw-UGC"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="programmer.jpg" width="224" height="222"/>
+    </resources>
+</document>

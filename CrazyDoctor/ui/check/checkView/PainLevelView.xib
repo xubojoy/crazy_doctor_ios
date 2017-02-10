@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qme-Oz-RwY" customClass="PainLevelView">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGy-Tj-3he">
+                    <rect key="frame" x="0.0" y="0.0" width="0.5" height="180"/>
+                    <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="UC6-PP-zs6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCJ-4u-Eac">
+                    <rect key="frame" x="289" y="0.0" width="0.5" height="180"/>
+                    <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="0.5" id="PqB-Ok-Msx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNM-B4-44x">
+                    <rect key="frame" x="0.0" y="180" width="290" height="0.5"/>
+                    <color key="backgroundColor" red="1" green="0.45035876089999999" blue="0.27707625180000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="v36-Oy-pej"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NGy-Tj-3he" firstAttribute="leading" secondItem="qme-Oz-RwY" secondAttribute="leading" id="0Er-Cz-Gqf"/>
+                <constraint firstAttribute="trailing" secondItem="yNM-B4-44x" secondAttribute="trailing" id="10a-An-k9q"/>
+                <constraint firstAttribute="bottom" secondItem="NGy-Tj-3he" secondAttribute="bottom" id="Dpu-LC-pdZ"/>
+                <constraint firstItem="NGy-Tj-3he" firstAttribute="top" secondItem="qme-Oz-RwY" secondAttribute="top" id="FGi-Gl-Eea"/>
+                <constraint firstItem="yNM-B4-44x" firstAttribute="leading" secondItem="qme-Oz-RwY" secondAttribute="leading" id="H9E-46-FNO"/>
+                <constraint firstAttribute="trailing" secondItem="dCJ-4u-Eac" secondAttribute="trailing" id="MdO-ek-Aep"/>
+                <constraint firstAttribute="bottom" secondItem="yNM-B4-44x" secondAttribute="bottom" id="cJv-pA-ihm"/>
+                <constraint firstAttribute="bottom" secondItem="dCJ-4u-Eac" secondAttribute="bottom" id="jiC-uE-zYb"/>
+                <constraint firstItem="dCJ-4u-Eac" firstAttribute="top" secondItem="qme-Oz-RwY" secondAttribute="top" id="tnH-0G-j0s"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="downLine" destination="yNM-B4-44x" id="nkZ-eX-6EF"/>
+                <outlet property="leftLine" destination="NGy-Tj-3he" id="45k-2S-qiE"/>
+                <outlet property="rightLine" destination="dCJ-4u-Eac" id="ICI-4l-c4C"/>
+            </connections>
+            <point key="canvasLocation" x="405" y="258"/>
+        </view>
+    </objects>
+</document>

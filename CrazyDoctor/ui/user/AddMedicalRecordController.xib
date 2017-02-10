@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddMedicalRecordController">
+            <connections>
+                <outlet property="cancelDateBtn" destination="GqA-q3-dfq" id="eNz-up-xqm"/>
+                <outlet property="chooseDateModalView" destination="sbp-3p-mHx" id="y1a-id-nim"/>
+                <outlet property="confirmDateBtn" destination="HQ0-eF-1cS" id="doL-Mi-NPG"/>
+                <outlet property="datePickerView" destination="DGt-2i-sq0" id="VE6-ur-Wa1"/>
+                <outlet property="maskView" destination="1ky-Rb-ZN9" id="Lgp-fl-CjW"/>
+                <outlet property="tableView" destination="TgT-4a-jOI" id="fgi-Qb-TVr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TgT-4a-jOI">
+                    <rect key="frame" x="0.0" y="44" width="600" height="496"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AMc-WQ-dwL"/>
+                        <outlet property="delegate" destination="-1" id="n0f-oD-i42"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TgT-4a-jOI" secondAttribute="trailing" id="0if-dY-O9b"/>
+                <constraint firstAttribute="bottom" secondItem="TgT-4a-jOI" secondAttribute="bottom" constant="60" id="HXc-gG-P7Q"/>
+                <constraint firstItem="TgT-4a-jOI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="XhV-iM-X7X"/>
+                <constraint firstItem="TgT-4a-jOI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cAC-IK-SG4"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="1ky-Rb-ZN9">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-261" y="896"/>
+        </view>
+        <view contentMode="scaleToFill" id="sbp-3p-mHx">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCO-ZM-zFg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YnS-fb-QRm"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="取消" id="GqA-q3-dfq">
+                            <connections>
+                                <action selector="cancelDatePickerClick:" destination="-1" id="Kjx-SS-Ypy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="07M-8M-fjk"/>
+                        <barButtonItem title="确定" id="HQ0-eF-1cS">
+                            <connections>
+                                <action selector="confirmDatePickerClick:" destination="-1" id="ISd-XQ-29v"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="DGt-2i-sq0">
+                    <rect key="frame" x="0.0" y="44" width="320" height="156"/>
+                    <date key="date" timeIntervalSinceReferenceDate="448199420.88484001">
+                        <!--2015-03-16 11:50:20 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QCO-ZM-zFg" secondAttribute="trailing" id="3AC-X9-10p"/>
+                <constraint firstItem="DGt-2i-sq0" firstAttribute="leading" secondItem="QCO-ZM-zFg" secondAttribute="leading" id="BO9-xv-XDN"/>
+                <constraint firstAttribute="bottom" secondItem="DGt-2i-sq0" secondAttribute="bottom" id="MDg-Wl-K8y"/>
+                <constraint firstItem="QCO-ZM-zFg" firstAttribute="leading" secondItem="sbp-3p-mHx" secondAttribute="leading" id="a1G-20-0ay"/>
+                <constraint firstItem="DGt-2i-sq0" firstAttribute="leading" secondItem="sbp-3p-mHx" secondAttribute="leading" id="cPi-JY-QbX"/>
+                <constraint firstAttribute="trailing" secondItem="DGt-2i-sq0" secondAttribute="trailing" id="j6Q-BL-OPc"/>
+                <constraint firstItem="DGt-2i-sq0" firstAttribute="top" secondItem="QCO-ZM-zFg" secondAttribute="bottom" id="oaG-bK-rV4"/>
+                <constraint firstItem="QCO-ZM-zFg" firstAttribute="top" secondItem="sbp-3p-mHx" secondAttribute="top" id="w9X-cs-YIj"/>
+                <constraint firstItem="DGt-2i-sq0" firstAttribute="top" secondItem="QCO-ZM-zFg" secondAttribute="bottom" id="wMd-4s-1Ny"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BO9-xv-XDN"/>
+                    <exclude reference="oaG-bK-rV4"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-5" y="1689"/>
+        </view>
+    </objects>
+</document>
